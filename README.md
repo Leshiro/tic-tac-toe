@@ -1,2 +1,2 @@
-# tic-tac-toe
-❌⭕❌Tic-tac-toe game written in Python
+# Challenge completed!
+✅ Make Tic-tac-toe in an hour.
