@@ -126,11 +126,7 @@ while True:
             turn = 1
             if spots["1"] == spots["2"] == spots["3"] == 2 or spots["4"] == spots["5"] == spots["6"] == 2 or spots["7"] == spots["8"] == spots["9"] == 2 or spots["1"] == spots["4"] == spots["7"] == 2 or spots["2"] == spots["5"] == spots["8"] == 2 or spots["3"] == spots["6"] == spots["9"] == 2 or spots["1"] == spots["5"] == spots["9"] == 2 or spots["3"] == spots["5"] == spots["7"] == 2:
                 game_message = "Player O wins the game!"
-                print(f"""
-    [{placeholders["1"]}][{placeholders["2"]}][{placeholders["3"]}]
-    [{placeholders["4"]}][{placeholders["5"]}][{placeholders["6"]}]    {game_message}
-    [{placeholders["7"]}][{placeholders["8"]}][{placeholders["9"]}]
-    """)
+                exec(game_over)
                 again = input("""Enter any key to play again, or enter "Q" to quit: """)
                 if again == "q" or again == "Q":
                     print("")
